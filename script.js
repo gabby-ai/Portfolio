@@ -1,4 +1,3 @@
-
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -23,52 +22,6 @@ const animateSkills = () => {
 
 window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
-
-
-const form = document.getElementById('contactForm');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    let isValid = true;
-    
-   
-    document.querySelectorAll('.error').forEach(error => {
-        error.style.display = 'none';
-    });
-    
-    
-    if (nameInput.value.trim() === '') {
-        document.getElementById('nameError').style.display = 'block';
-        isValid = false;
-    }
-    
-    
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailInput.value)) {
-        document.getElementById('emailError').style.display = 'block';
-        isValid = false;
-    }
-    
-    
-    if (messageInput.value.trim() === '') {
-        document.getElementById('messageError').style.display = 'block';
-        isValid = false;
-    }
-    
-    
-    if (isValid) {
-        document.getElementById('successMessage').style.display = 'block';
-        form.reset();
-        
-        setTimeout(() => {
-            document.getElementById('successMessage').style.display = 'none';
-        }, 5000);
-    }
-});
 
 
 const themeToggle = document.getElementById('themeToggle');
