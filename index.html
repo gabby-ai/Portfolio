@@ -123,8 +123,17 @@
                 </div>
             </div>
         </div>
-    </section>
 
+        <div class="project-card" onclick="document.getElementById('aqualliera-modal').style.display='flex'" style="cursor:pointer;">
+             <div class="project-image">💧</div>
+                <div class="project-content">
+                <h3>AQUALLIERA</h3>
+                <p>A community-centered mobile app that helps Baguio residents locate nearby water refilling stations in real time.</p>
+                <p style="margin-top: 0.5rem;"><strong>Tech:</strong> Android Studio, Firebase, Visual Studio Code, Figma</p>
+                <p style="margin-top: 0.8rem; color: #667eea; font-weight: 500;">View Details →</p>
+            </div>
+        </div>
+    </section>
 
 <section id="contact">
         <h2>Contact Information</h2>
@@ -157,5 +166,37 @@
 
     <script src="script.js"></script>
 </body>
+
+<div id="aqualliera-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:999; justify-content:center; align-items:center; padding:1rem;">
+    <div id="aqualliera-modal-inner" style="border-radius:12px; max-width:650px; width:100%; max-height:90vh; overflow-y:auto; padding:2rem; position:relative;">
+        <button onclick="document.getElementById('aqualliera-modal').style.display='none'" style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:1.5rem; cursor:pointer; color:#333;">✕</button>
+        <div style="font-size:3rem; margin-bottom:1rem;">💧</div>
+        <h2 style="color:#667eea; margin-bottom:0.5rem;">AQUALLIERA</h2>
+        <p style="color:#888; margin-bottom:1.5rem;">Capstone Project — University of the Cordilleras, Septemeber 2025 - Presnt
+        </p>
+
+        <h3 style="color:#333; margin-bottom:0.5rem;">About the Project</h3>
+        <p style="margin-bottom:1rem;">A mobile application that helps Baguio City residents locate nearby water refilling stations in real time. The app addresses the city's water access challenges by providing station locations, operating hours, pricing, delivery options, and water safety certifications.</p>
+
+        <h3 style="color:#333; margin-bottom:0.5rem;">My Role</h3>
+        <p style="margin-bottom:1rem;">UI/UX Designer & Research Lead — responsible for the user interface design using Figma, and led the writing of the capstone research paper including background of the study, methodology, and documentation.</p>
+
+        <h3 style="color:#333; margin-bottom:0.5rem;">Key Features</h3>
+        <ul style="margin-left:1.2rem; margin-bottom:1rem; line-height:2;">
+            <li>Interactive map to locate nearby water stations in real time</li>
+            <li>Transparent pricing and delivery information</li>
+            <li>Water safety certifications per station</li>
+            <li>Order tracking dashboard for station owners</li>
+            <li>Data analytics for demand patterns and peak hours</li>
+            <li>User reviews and station ratings</li>
+        </ul>
+
+        <h3 style="color:#333; margin-bottom:0.5rem;">Tech Stack</h3>
+        <p style="margin-bottom:1rem;">Android Studio &nbsp;|&nbsp; Firebase &nbsp;|&nbsp; Visual Studio Code &nbsp;|&nbsp; Figma</p>
+
+        <h3 style="color:#333; margin-bottom:0.5rem;">Team</h3>
+        <p>Sojo Sales Ansen Decaran &nbsp;|&nbsp; John Gabriel Bernal Vidad</p>
+    </div>
+</div>
 
 </html>

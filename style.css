@@ -410,3 +410,30 @@ body.dark-mode .contact-link {
 body.dark-mode .contact-link:hover {
     color: #667eea;
 }
+
+#aqualliera-modal-inner {
+    background: white;
+    color: #333;
+}
+
+
+body.dark-mode #aqualliera-modal-inner {
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode #aqualliera-modal-inner h2,
+body.dark-mode #aqualliera-modal-inner h3,
+body.dark-mode #aqualliera-modal-inner p,
+body.dark-mode #aqualliera-modal-inner li,
+body.dark-mode #aqualliera-modal-inner button {
+    color: #e0e0e0 !important; 
+}
+
+body.dark-mode #aqualliera-modal-inner h2 {
+    color: #a78bfa !important;
+}
+
+body.dark-mode #aqualliera-modal-inner button {
+    color: #e0e0e0 !important;
+}
